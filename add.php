@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <?php 
             var_dump($statuses['id']);
             require "data.php";
-            //array_shift($statuses);
+           
             foreach ($statuses as $status) : ?>
             <option value="<?php echo $status; ?>"
             <?php if (isset($invoice['status']) && $status === $invoice['status']) : ?> selected <?php endif; ?>>
