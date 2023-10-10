@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <option value="">Select a Status</option>
           <?php
           require "data.php";
-          //array_shift($statuses);
+          
           foreach ($statuses as $status) :
           ?>
 
